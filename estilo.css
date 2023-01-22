@@ -1,0 +1,102 @@
+:root {
+    --bg-color: #004643;
+    --main-color: #fffffe;
+    --p-color: #abd1c6;
+    --secundario: #abd1c6;
+    --text-secundario: #001e1d;
+    --btn-bg:#f9bc60;
+    --btn-text: #001e1d;
+}
+*{
+    font-family: 'Roboto', monospace !important;
+}
+body{
+    background-color: var(--bg-color);
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+    color:var(--main-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+p{
+    color:var(--p-color);
+}
+.text-titulo{
+    font-size: 1.7em !important;
+}
+.btn{
+    background-color: var(--btn-bg) !important;
+    color: var(--btn-text);
+    border: none !important;
+    border-radius: 2px;
+}
+.descarga{
+    position: fixed;
+    width: 200px;
+    top: 40%;
+    right: 0;
+    border: 1px solid var(--bg-color);
+}
+.sobre-mi
+{   
+    background-color: var(--secundario) ;
+    color: var(--text-secundario);
+}
+.skill{
+    height: 300px;
+    padding: 50px;
+    background-color: var(--bg-color);
+}
+.icon{
+    height: 70px;
+}
+.seccion-icon{
+    width: 50%;
+}
+.seccion-lenguajes{
+    width: 50%;
+    margin-left: 50px;
+}
+.proyectos{
+    background-color: var(--text-secundario);
+}
+.card{
+    background-color: var(--text-secundario);
+    border: 0px solid var(--secundario) !important;
+    border-bottom: 0px solid var(--secundario) !important;
+    z-index: 1;
+    border-radius: 0;
+}
+.borde-texto{
+    border-width: 0px 0px 2px 0px !important;
+    border-color: var(--secundario) !important;
+    border-style: solid;
+    width: 75%;
+    transition: all .2s linear;
+}
+.card:hover .borde-texto{
+    width: 100%;
+}
+.wordpress{
+    color: #207195;
+    font-weight: bold;
+}
+.tool-img{
+    height: 30px;
+}
+.card-link{
+    text-decoration: none;
+    color: rgb(83, 71, 0);
+    margin-top: 5px;
+    
+
+}
+.detector{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    opacity: 0;
+    background-color: aqua;
+    z-index: 50;
+}

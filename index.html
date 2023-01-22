@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap & CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="efectos.css">
+
+    <!-- Font & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <title>Lucas Greco!</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+  </head>
+  <body>
+      
+      <div class="container-fluid">
+
+        <div class="row d-flex justify-content-center align-content-center vh-100">
+            
+            <div class="col-auto">
+                <img src="https://placekitten.com/200/200" class="rounded-circle" alt="">
+            </div>
+            <div class="col-auto d-flex">
+                <div class="align-self-center text-center text-titulo">
+                    <h1>Lucas Greco</h1>
+                    <p class="este">Desarrollador WEB</p>
+                </div>
+            </div>
+
+            <a href="" class="btn descarga py-3 fs-4 m-5 fadeInRight"> Descargar cv </a>
+            
+        </div> 
+
+        <div class="row d-flex justify-content-center py-5 sobre-mi">
+            <div class="col-4 align-self-center">
+                <h1 class="sobre-mi">Sobre mi</h1>
+                <h3 class="sobre-mi">Desarrollador Backend</h3>
+                <p class="sobre-mi">
+                    Soy proactivo, curioso y autodidacta. <br>
+                    Actualmente, tengo varios proyectos personales que acompañan <br>
+                    y potencian mis conocimientos. <br>
+                    Me gusta capacitarme constantemente y aplicar lo aprendido en mis
+                    proyectos.                
+                </p>
+            </div>
+            <div class="col-4">
+                <div class="align-self-center skill d-flex">
+                    <div class="seccion-icon d-flex justify-content-center align-content-center">
+                        <div class="text-center align-self-center">
+                            <img src="img/html.png" class="icon my-4">
+                            <img src="img/css.png" class="icon my-4">
+                        </div>
+                        <div class="text-center align-self-center">
+                            <img src="img/js.png" class="icon my-4">
+                            <img src="img/php.png" class="icon my-4">
+                        </div>
+                    </div>
+                    <div class="seccion-lenguajes ps-5 align-self-center fw-bold">
+                        <p>LARAVEL</p>
+                        <p>JQUERY</p>
+                        <p>VUE</p>
+                        <p>WORDPRESS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <h1 class="text-center mt-5">Proyectos</h1>
+            <div class="col m-5 p-5 proyectos d-flex">
+                
+                <div class="card" style="width: 18rem;" id="cms">
+                    <div class="detector" id="cms" onmouseover="hover(id)">
+                    </div>
+                    <div class="tooltip" id="tool-cms" style="top: -170px;" >
+                        <div class="d-flex flex-column">
+                            <p class="wordpress">WORDPRESS</p>
+                            <div class="d-flex justify-content-between mx-2 my-2">
+                                <img src="img/web.png" class="tool-img" alt="">
+                                <a href="" class="card-link">WebSite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/cms.png" class="card-img-top" alt="Lucas Greco cms">
+                    <div class="card-body text-center">
+                        <div class="borde-texto mx-auto ">
+                            <h5 class="card-title text-center mb-3">CMS</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-5" style="width: 18rem;" id="bandaram">
+                    <div class="detector" id="bandaram" onmouseover="hover(id)">
+                    </div>
+                    <div class="tooltip" id="tool-bandaram" style="top: -170px;" >
+                        <div class="d-flex flex-column">
+                            <p class="wordpress">PHP</p>
+                            <div class="d-flex justify-content-between mx-2">
+                                <img src="img/github.png" class="tool-img" alt="">
+                                <a href="" class="card-link">GitHub</a>
+                            </div>
+                            <div class="d-flex justify-content-between mx-2 my-2">
+                                <img src="img/web.png" class="tool-img" alt="">
+                                <a href="" class="card-link">WebSite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/cms.png" class="card-img-top" alt="Lucas Greco cms">
+                    <div class="card-body text-center">
+                        <div class="borde-texto mx-auto ">
+                            <h5 class="card-title text-center mb-3">BANDARAM</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" id="carrito">
+                    <div class="detector" id="carrito" onmouseover="hover(id)">
+                    </div>
+                    <div class="tooltip" id="tool-carrito" style="top: -170px;" >
+                        <div class="d-flex flex-column">
+                            <p class="wordpress">JS</p>
+                            <div class="d-flex justify-content-between mx-2">
+                                <img src="img/github.png" class="tool-img" alt="">
+                                <a href="" class="card-link">GitHub</a>
+                            </div>
+                            <div class="d-flex justify-content-between mx-2 my-2">
+                                <img src="img/web.png" class="tool-img" alt="">
+                                <a href="" class="card-link">WebSite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/cms.png" class="card-img-top" alt="Lucas Greco cms">
+                    <div class="card-body text-center">
+                        <div class="borde-texto mx-auto ">
+                            <h5 class="card-title text-center mb-3">CARRITO</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-content-center vh-100">
+            
+            <div class="col-auto">
+                <img src="https://placekitten.com/200/200" class="rounded-circle" alt="">
+            </div>
+            <div class="col-auto d-flex">
+                <div class="align-self-center text-center text-titulo">
+                    <h1>Lucas Greco</h1>
+                    <p class="este">Desarrollador WEB</p>
+                </div>
+            </div>
+
+            <a href="" class="btn descarga py-3 fs-4 m-5 fadeInRight"> Descargar cv </a>
+            
+        </div> 
+    </div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+  
+    function hover(id){
+        
+        let card = document.getElementById(id);
+        let detector = card.id;
+        let tooltip = document.querySelector("tool-" + detector)
+        $( "#"+detector ).mouseover(function(){
+            console.log("estoy dentro");
+            //"#" + tooltip
+            let divTooltip = document.getElementById("tool-" + detector);                
+            divTooltip.setAttribute("class","tooltip tooltip-one fadeInUp");
+        });
+
+        $( "#"+detector ).mouseleave(function(){
+            console.log("sali")
+            let divTooltip = document.getElementById("tool-" + detector); 
+            divTooltip.setAttribute("class","tooltip tooltip-one fadeOut");
+        });
+            
+            //$("#"+card[0]).mouseenter(function(){
+                //console.log("#"+tooltip[0]);
+                //tooltip.setAttribute("class","tooltip tooltip-one fadeInUp");
+                //})
+                    
+    }
+            
+</script>    
+</body>
+</html>

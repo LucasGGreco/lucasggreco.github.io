@@ -66,6 +66,7 @@ p{
     border-bottom: 0px solid var(--secundario) !important;
     z-index: 1;
     border-radius: 0;
+    width: 100% !important;
 }
 .borde-texto{
     border-width: 0px 0px 2px 0px !important;

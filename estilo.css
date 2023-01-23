@@ -81,15 +81,24 @@ p{
     color: #207195;
     font-weight: bold;
 }
+.php{
+    color: #3e4665;
+    font-weight: bold;
+}
+.js{
+    color: #b8a200;
+    font-weight: bold;
+}
 .tool-img{
     height: 30px;
+}
+.card{
+    width: 250px !important;
 }
 .card-link{
     text-decoration: none;
     color: rgb(83, 71, 0);
     margin-top: 5px;
-    
-
 }
 .detector{
     height: 120%;
@@ -99,4 +108,7 @@ p{
     opacity: 0;
     background-color: aqua;
     z-index: 50;
+}
+.aa{
+    background-color: aqua;
 }

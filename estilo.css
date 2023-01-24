@@ -49,7 +49,6 @@ p{
 }
 .sobre-mi
 {   
-    background-color: var(--secundario) ;
     color: var(--text-secundario);
 }
 .skill{

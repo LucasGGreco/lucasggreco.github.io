@@ -24,6 +24,16 @@ p{
 .text-titulo{
     font-size: 1.7em !important;
 }
+.text-titulo h1{
+    font-size: 2.5em !important;
+}
+.hola-soy{
+    font-size: 25px;
+    position: relative;
+    color: var(--main-color);
+    right: 144px ;
+    top: 10px;
+}
 .btn{
     background-color: var(--btn-bg) !important;
     color: var(--btn-text);
@@ -58,19 +68,25 @@ p{
     margin-left: 50px;
 }
 .proyectos{
-    background-color: var(--text-secundario);
+    background-color: var(--secundario);
 }
 .card{
-    background-color: var(--text-secundario);
-    border: 0px solid var(--secundario) !important;
-    border-bottom: 0px solid var(--secundario) !important;
+    border: 0px solid var(--text-secundario) !important;
+    border-bottom: 0px solid var(--text-secundario) !important;
     z-index: 1;
     border-radius: 0;
     width: 100% !important;
+    width: 250px !important;
+}
+.card-body{
+    background-color: var(--secundario);
+}
+.card-body h5{
+    color: var(--text-secundario) !important;
 }
 .borde-texto{
     border-width: 0px 0px 2px 0px !important;
-    border-color: var(--secundario) !important;
+    border-color: var(--text-secundario) !important;
     border-style: solid;
     width: 75%;
     transition: all .2s linear;
@@ -93,9 +109,6 @@ p{
 .tool-img{
     height: 30px;
 }
-.card{
-    width: 250px !important;
-}
 .card-link{
     text-decoration: none;
     color: rgb(83, 71, 0);
@@ -111,5 +124,5 @@ p{
     z-index: 50;
 }
 .aa{
-    background-color: aqua;
+    background-color: aqa;
 }

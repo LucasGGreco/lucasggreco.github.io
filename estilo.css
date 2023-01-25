@@ -34,6 +34,9 @@ p{
     right: 144px ;
     top: 10px;
 }
+.hola-soy-mobile{
+    right: 42px ;
+}
 .btn{
     background-color: var(--btn-bg) !important;
     color: var(--btn-text);

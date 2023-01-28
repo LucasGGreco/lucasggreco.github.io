@@ -23,9 +23,6 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 p{
     color:var(--p-color);
 }
-.wave{
-
-}
 .wave-bot{
     position: absolute;
     bottom: 0;
@@ -34,6 +31,11 @@ p{
 .wave-top{
     position: absolute;
     margin: 0;
+}
+.nombre{
+    font-size: 4rem !important;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 .text-titulo{
     font-size: 1.7em !important;
@@ -155,4 +157,8 @@ p{
     background-color: var(--bg-color);
     color: var(--p-color);
     width: 100%;
+}
+
+@media (max-width: 991.98px) {
+
 }

@@ -1,11 +1,13 @@
 :root {
-    --bg-color: #004643;
-    --main-color: #fffffe;
-    --p-color: #abd1c6;
+    --bg-color: #24242B; /* color fondo */
+    --p-color: #EDEDED; /* text color */
+    --btn-bg:#BB8D38;
+    --btn-bg-hover:#D4B74E;
+
+    --btn-text: #24242B;
     --secundario: #abd1c6;
     --text-secundario: #001e1d;
-    --btn-bg:#f9bc60;
-    --btn-text: #001e1d;
+    --main-color: #fffffe;
 }
 *{
     font-family: 'Roboto', monospace !important;
@@ -14,7 +16,7 @@ body{
     background-color: var(--bg-color);
 }
 h1 , h2 , h3 , h4 , h5 , h6 {
-    color:var(--main-color);
+    color:var(--p-color);
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -43,6 +45,9 @@ p{
     border: none !important;
     border-radius: 2px;
 }
+.btn:hover{
+    background-color: var(--btn-bg-hover) !important;
+}
 .descarga{
     position: fixed;
     width: 200px;
@@ -50,10 +55,9 @@ p{
     right: 0;
     border: 1px solid var(--bg-color);
 }
-.sobre-mi
-{   
-    background-color: var(--secundario) ;
-    color: var(--text-secundario);
+.sobre-mi{   
+    background-color: var(--p-color) ;
+    color: var(--bg-color);
 }
 .skill{
     height: 300px;
@@ -66,26 +70,25 @@ p{
 .seccion-icon{
     width: 50%;
 }
+.lenguajes{
+    color: var(--main-color) !important;
+}
 .seccion-lenguajes{
     width: 50%;
     margin-left: 50px;
-}
-.proyectos{
-    background-color: var(--secundario);
 }
 .card{
     border: 0px solid var(--text-secundario) !important;
     border-bottom: 0px solid var(--text-secundario) !important;
     z-index: 1;
     border-radius: 0;
-    width: 100% !important;
-    width: 250px !important;
+    width: 350px !important;
 }
 .card-body{
-    background-color: var(--secundario);
+    background-color: var(--main-color);
 }
-.card-body h5{
-    color: var(--text-secundario) !important;
+.card-body h5 , p{
+    color: var(--bg-color) !important;
 }
 .borde-texto{
     border-width: 0px 0px 2px 0px !important;
@@ -98,15 +101,15 @@ p{
     width: 100%;
 }
 .wordpress{
-    color: #207195;
+    color: #207195 !important;
     font-weight: bold;
 }
 .php{
-    color: #3e4665;
+    color: #3e4665 !important;
     font-weight: bold;
 }
 .js{
-    color: #b8a200;
+    color: #b8a200 !important;
     font-weight: bold;
 }
 .tool-img{
@@ -126,6 +129,15 @@ p{
     background-color: aqua;
     z-index: 50;
 }
-.aa{
-    background-color: aqa;
+.seccion-clara{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+.seccion-clara h1,p{
+    color: var(--bg-color) !important;
+}
+.form{
+    background-color: var(--bg-color);
+    color: var(--p-color);
+    width: 100%;
 }

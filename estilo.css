@@ -43,16 +43,6 @@ p{
 .text-titulo h1{
     font-size: 2.5em !important;
 }
-.hola-soy{
-    font-size: 25px;
-    position: relative;
-    color: var(--main-color);
-    right: 144px ;
-    top: 10px;
-}
-.hola-soy-mobile{
-    right: 42px ;
-}
 .btn{
     background-color: var(--btn-bg) !important;
     color: var(--btn-text);

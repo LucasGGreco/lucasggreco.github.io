@@ -2,10 +2,13 @@
 :root {
     --color-primario: rgb(243, 189, 104);
     --color-background: #162530;
+    
     --font-color: rgb(162, 162, 162);
-    --font: 'Open Sans', sans-serif;
-    --border-radius: 8px;
     --font-weight: 800;
+    --font: 'Open Sans', sans-serif;
+  
+    --border-radius: 8px;
+
     --font-size: 20px;
     --font-size-xs: 0.75rem;  
     --font-size-sm: 0.875rem; 
@@ -77,7 +80,7 @@ h2{
 
 main {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   box-shadow: 0px 10px 30px #162530;
 }
@@ -113,7 +116,11 @@ main a:hover , footer a:hover{
 
 main > * {
   position: relative;
-  z-index: 1; /* asegura que el contenido quede encima */
+  z-index: 1;
+}
+
+section.about-me{
+  min-height: 100vh;
 }
 
 section.about-me .list-group-item {
@@ -181,7 +188,7 @@ section.proyects article .wordpress{
 }
 
 section.proyects article .box-img {
-  width: 400px;
+  width: 100%;
   height: 200px;
   padding-left: 0;
   display: flex;             
@@ -192,8 +199,8 @@ section.proyects article .box-img {
 }
 
 section.proyects article .box-img img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: var(--border-radius);
@@ -201,7 +208,7 @@ section.proyects article .box-img img {
 
 
 section.proyects article .icon-btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -226,7 +233,7 @@ section.proyects article .icon-btn:hover svg {
 }
 
 footer{
-  height: 120vh;
+  min-height: 90vh;
   position: relative;
   overflow: hidden;
 }
@@ -244,16 +251,62 @@ footer .bg-footer{
   z-index: -1;
   position: absolute;
   display: block;
-  bottom: -200px;
+  bottom: -50px;
   left: -500px;
 }
 
+
 footer .bird {
+  display: none;
   position: absolute;
   width: 400px;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
-  pointer-events: none; /* para que no bloquee el cursor */
+  pointer-events: none;
+}
+
+/* Medium (MD) - ≥768px */
+@media (min-width: 768px) {
+
+  section.proyects article .icon-btn {
+    display: flex;
+  }
+
+  section.proyects article .box-img {
+    width: 33%;
+    height: 100px;
+  }
+
+  footer .bird {
+    display: block;
+  }
+
+}
+
+/* Large (LG) - ≥992px */
+@media (min-width: 992px) {
+  section.proyects article .box-img {
+    height: 150px;
+  }
+  footer{
+    min-height: 110vh;
+  }
+}
+
+/* Extra Large (XL) - ≥1200px */
+@media (min-width: 1200px) {
+  section.proyects article .box-img {
+    height: 200px;
+  }
+  
+  footer{
+    min-height: 100vh;
+  }
+
+  
+  footer .bg-footer{
+    bottom: -350px;
+  }
 }
